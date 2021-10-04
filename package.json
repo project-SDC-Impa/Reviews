@@ -2,9 +2,10 @@
   "name": "reviews",
   "version": "1.0.0",
   "description": "SDC - Reviews",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,16 +18,15 @@
   },
   "homepage": "https://github.com/project-SDC-Impa/Reviews#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.32.0",
-    "@typescript-eslint/parser": "^4.32.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.26.1",
-    "jest": "^27.2.4"
+    "jest": "^27.2.4",
+    "nodemon": "^2.0.13"
   },
   "dependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "@babel/preset-typescript": "^7.15.0",
-    "babel-jest": "^27.2.4"
+    "babel-jest": "^27.2.4",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
   }
 }
