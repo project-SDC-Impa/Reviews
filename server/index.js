@@ -1,11 +1,11 @@
 const express = require('express');
 
 const app = express();
-const router = require('./Routers/index.js');
+const router = require('./Routers/router');
 
 let cors = require('cors');
 const bodyParser = require('body-parser');
-const port = 3000;
+const port = 8080;
 
 app.use(cors());
 

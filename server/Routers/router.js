@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getReviews, getMeta,  addReview, markReviewHelpful,reportReview } = require('../controller/index');
+const { getReviews, getMeta,  addReview, markReviewHelpful,reportReview } = require('../Controllers/index.js');
 
 router.get('/')
 router.get('/reviews/', getReviews);
